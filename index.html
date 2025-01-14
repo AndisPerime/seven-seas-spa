@@ -3,9 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Red Carpet Spa</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body class="light-mode">
+    <header>
+        <nav>
+            <div class="page-title">Red Carpet Spa</div>
+            <button id="theme-toggle" aria-label="Toggle theme">
+                <span class="theme-text">🌙</span>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#" data-nav="home">Home</a></li>
+                <li><a href="#" data-nav="services">Services</a></li>
+                <li><a href="#" data-nav="about">About Us</a></li>
+                <li><a href="#" data-nav="contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="nav-dropdown" id="home-dropdown">
+            <div class="nav-dropdown-content">
+                <div>
+                    <h3>Welcome</h3>
+                    <ul>
+                        <li><a href="#">Latest Offers</a></li>
+                        <li><a href="#">Featured Services</a></li>
+                        <li><a href="#">New Clients</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-dropdown" id="services-dropdown">
+            <div class="nav-dropdown-content">
+                <div>
+                    <h3>Spa Services</h3>
+                    <ul>
+                        <li><a href="#">Massage Therapy</a></li>
+                        <li><a href="#">Facial Treatments</a></li>
+                        <li><a href="#">Body Treatments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-dropdown" id="about-dropdown">
+            <div class="nav-dropdown-content">
+                <div>
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-dropdown" id="contact-dropdown">
+            <div class="nav-dropdown-content">
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#">Contact Form</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content Sections -->
+    <div class="page-content" id="home-page">
+        <button class="page-close" aria-label="Close page">×</button>
+        <div class="page-content-inner">
+            <h2>Welcome to Luxury Wellness</h2>
+            <div class="content-grid">
+                <div class="content-section offer-card">
+                    <h3>Latest Offers</h3>
+                    <div class="offer-item">
+                        <span class="offer-tag">New</span>
+                        <h4>Summer Renewal Package</h4>
+                        <p>Includes full-body massage, facial, and body scrub.</p>
+                    </div>
+                    <div class="offer-item">
+                        <span class="offer-tag">Limited Time</span>
+                        <h4>Couples Retreat</h4>
+                        <p>Enjoy a relaxing spa day with your partner.</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h3>Featured Services</h3>
+                    <p>Experience our most popular treatments and services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content" id="services-page">
+        <button class="page-close" aria-label="Close page">×</button>
+        <div class="page-content-inner">
+            <h2>Our Services</h2>
+            <div class="content-grid">
+                <div class="content-section">
+                    <h3>Massage Therapy</h3>
+                    <p>Relax with our therapeutic massage treatments.</p>
+                </div>
+                <div class="content-section">
+                    <h3>Facial Treatments</h3>
+                    <p>Rejuvenate your skin with our premium facials.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content" id="about-page">
+        <button class="page-close" aria-label="Close page">×</button>
+        <div class="page-content-inner">
+            <h2>About Us</h2>
+            <div class="content-grid">
+                <div class="content-section">
+                    <h3>Our Story</h3>
+                    <p>Learn about our journey and commitment to wellness.</p>
+                </div>
+                <div class="content-section">
+                    <h3>Our Team</h3>
+                    <p>Meet our experienced professionals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content" id="contact-page">
+        <button class="page-close" aria-label="Close page">×</button>
+        <div class="page-content-inner">
+            <h2>Contact Us</h2>
+            <div class="content-grid">
+                <div class="content-section">
+                    <h3>Get in Touch</h3>
+                    <p>We're here to answer your questions.</p>
+                </div>
+                <div class="content-section">
+                    <h3>Location</h3>
+                    <p>Find us in the heart of the city.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="welcome" class="hero-section">
+            <div class="hero-content">
+                <h1>Experience Luxury<br>and Wellness</h1>
+                <p>Your journey to relaxation and rejuvenation begins here at Red Carpet Spa.</p>
+            </div>
+        </section>
+
+        <section id="highlights">
+            <h2>Our Premium Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="assets/images/scrub-prep.jpg" alt="Organic Body Scrub Preparation" class="service-image">
+                    <div class="service-content">
+                        <h3>Organic Body Scrubs</h3>
+                        <p>Experience our handcrafted organic scrubs made fresh daily with natural ingredients.</p>
+                        <div class="ingredients-list">
+                            <span>✧ Sea Salt</span>
+                            <span>✧ Essential Oils</span>
+                            <span>✧ Organic Herbs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Red Carpet Spa offers luxury wellness and relaxation services in a serene environment.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="booking.html">Book Appointment</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>📍 123 Spa Street</li>
+                    <li>📞 (555) 123-4567</li>
+                    <li>✉️ info@redcarpetspa.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Red Carpet Spa. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/hamburger-menu.js"></script>
+    <script src="assets/js/nav-dropdown.js"></script>
 </body>
 </html>
